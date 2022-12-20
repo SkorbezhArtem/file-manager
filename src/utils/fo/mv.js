@@ -1,4 +1,6 @@
 import { __dirname } from "../../index.js";
+import cp from "./cp.js";
+import remove from "./remove.js";
 
 
 const mv = ([pathToFile, pathToNewDir]) => {

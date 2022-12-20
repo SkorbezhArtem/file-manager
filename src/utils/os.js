@@ -2,7 +2,7 @@ import os from 'os';
 
 const osUtil = ([param]) => {
     return new Promise((res) => {
-        if (!param) re(`\x1b[31m❌ OS: Operation failed\x1b[0m`)
+        if (!param) res(`\x1b[31m❌ OS: Operation failed\x1b[0m`)
         switch (param.slice(2)) {
             case 'EOL': {
                 res(`\x1b[35mOS ${param.slice(2)}: ${JSON.stringify(os.EOL)}\x1b[0m`);

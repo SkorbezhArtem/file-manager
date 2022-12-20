@@ -35,11 +35,11 @@ const initCLI = args => {
     const rl = createInterface({input: stdin, output: stdout});
     rl.on("line", async (line) => {
         const [command, ...params] = line.includes('"') ? line.split('"')
-            .map(item => item.trim())
-            .filter(item => item)
-        : line.split(' ')
+                .map(item => item.trim())
+                .filter(item => item)
+            : line.split(' ')
 
-        let promise = null;
+        let promise;
 
         switch (command) {
             case 'add': {
@@ -110,7 +110,7 @@ const initCLI = args => {
 
         if(!promise) return;
         promise.then(result => {
-            if (result && params[0] === '--cpus') {
+            if (result) {
                 if (params[0] === '--cpus') {
                     const [msg, cpus] = result;
                     console.log(msg);

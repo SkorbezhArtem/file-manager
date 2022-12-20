@@ -21,7 +21,7 @@ const cp = ([pathToFile, pathToNewDir]) => {
         rs.pipe(ws);
         rs.on('end', () => {
             ws.close();
-            resolve();
+            resolve()
         });
     })
 }
