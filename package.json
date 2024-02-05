@@ -1,0 +1,13 @@
+{
+  "name": "file-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "nodejs2022Q4-file-manager-task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node src/index.js"
+  },
+  "author": "SkorbezhArtem",
+  "license": "ISC"
+}
